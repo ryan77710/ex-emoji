@@ -16,8 +16,7 @@ header input {
   border: none;
 }
 .Line {
-  height: 1400px;
-
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
   max-width: 1025px;

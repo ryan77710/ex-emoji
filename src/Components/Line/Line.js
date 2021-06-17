@@ -8,7 +8,13 @@ const Line = (props) => {
     <div className="Line">
       {tab.map((emo, index) => {
         if (regex.test(emo.keywords)) {
-          return <DivEmoji symbol={emo.symbol} title={emo.title}></DivEmoji>;
+          return (
+            <DivEmoji
+              key={index}
+              symbol={emo.symbol}
+              title={emo.title}
+            ></DivEmoji>
+          );
         } else {
           return "";
         }
